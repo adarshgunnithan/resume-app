@@ -21,16 +21,19 @@ const mainRoutes: Routes = [
         },
         {
             path: 'skills',
-            component: SkillsComponent
+            component: SkillsComponent,
+            data: { animation: 'isRight' }
           
         },
         {
             path: 'experience',
-            component: ExperienceComponent
+            component: ExperienceComponent,
+            data: { animation: 'isRight' }
         },
         {
             path: 'education',
-            component: EducationComponent
+            component: EducationComponent,
+            data: { animation: 'isRight' }
         }
     ]
 

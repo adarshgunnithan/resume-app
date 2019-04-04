@@ -8,7 +8,19 @@ import { EducationComponent } from './app/components/education/education.compone
 import { SkillsComponent } from './app/components/skills/skills.component';
 import { AwardsComponent } from './app/components/awards/awards.component';
 import { RouterModule, Routes } from '@angular/router';
-import {AppRoutingModule} from './app-router.module'
+import {AppRoutingModule} from './app-router.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {
+  transition,
+  trigger,
+  query,
+  style,
+  animate,
+  group,
+  animateChild
+} from '@angular/animations';
+
+
 
 
 @NgModule({
@@ -22,6 +34,7 @@ import {AppRoutingModule} from './app-router.module'
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule
   ],
   providers: [],
