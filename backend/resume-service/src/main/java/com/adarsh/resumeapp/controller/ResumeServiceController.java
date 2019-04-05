@@ -3,6 +3,8 @@ package com.adarsh.resumeapp.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -25,28 +27,31 @@ public class ResumeServiceController {
 	ResumeService resumeService;
 	
 	@GetMapping("/about")
-	public List<About> getAboutPageContent(){
-		return resumeService.getAboutData();
-		
+	public ResponseEntity<?> getAboutPageContent() {
+		List<About> aboutList = resumeService.getAboutData();
+		return  new ResponseEntity<List<About>>(aboutList, HttpStatus.OK);
 	}
-	
+
 	@GetMapping("/experience")
-	public List<Experience>  getExperience(){
-		return resumeService.getExperience();
+	public  ResponseEntity<?> getExperience(){
+		List<Experience> experienceList = resumeService.getExperience();
+		return new ResponseEntity<List<Experience>>(experienceList, HttpStatus.OK);
 		
 	}
 	
 	@GetMapping("/qualifications")
-	public List<Qualification> getQualifications(){
-		return resumeService.getQualifications();
-		
+	public ResponseEntity<?> getQualifications() {
+		List<Qualification> qualifications = resumeService.getQualifications();
+		return new ResponseEntity<List<Qualification>>(qualifications, HttpStatus.OK);
+
 	}
 	
 	@GetMapping("/skills")
-	public List<Skill> getSkills(){
-		return resumeService.getSkills();
-		
+	public ResponseEntity<?> getSkills() {
+		List<Skill> skills = resumeService.getSkills();
+		return new ResponseEntity<List<Skill>>(skills, HttpStatus.OK);
 	}
+	
 	@GetMapping("/health-check")
 	public String healthCheckService(){
 		return "Welcome to Resume Service !!!";
@@ -82,7 +87,6 @@ public class ResumeServiceController {
 		return true;
 	}
 
-	//("/qualifications")
 	@PostMapping("/qualifications")
 	public boolean addQualifications(@RequestBody  List<Qualification> qualifications){
 		for(Qualification qualificationEntry :qualifications){
