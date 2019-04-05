@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -55,7 +56,7 @@ public class ResumeServiceController {
 	
 	//utility services
 	@PostMapping("/about")
-	public boolean addAboutInfo(List<About> aboutList){
+	public boolean addAboutInfo(@RequestBody List<About> aboutList){
 		boolean isSuccess= false;
 		for(About aboutEntry :aboutList){
 			resumeService.saveAboutEntry(aboutEntry);
@@ -65,7 +66,7 @@ public class ResumeServiceController {
 	}
 	
 	@PostMapping("/skills")
-	public boolean addSkills(List<Skill> skillList){
+	public boolean addSkills(@RequestBody List<Skill> skillList){
 		boolean isSuccess= false;
 		for(Skill skillEntry :skillList){
 			resumeService.saveSkill(skillEntry);
@@ -73,7 +74,7 @@ public class ResumeServiceController {
 		return isSuccess;
 	}
 	@PostMapping("/experience")
-	public boolean addExperience(List<Experience> experienceList){
+	public boolean addExperience(@RequestBody List<Experience> experienceList){
 		
 		for(Experience experienceEntry :experienceList){
 			resumeService.saveExperienceEntry(experienceEntry);
@@ -83,7 +84,7 @@ public class ResumeServiceController {
 
 	//("/qualifications")
 	@PostMapping("/qualifications")
-	public boolean addQualifications(List<Qualification> qualifications){
+	public boolean addQualifications(@RequestBody  List<Qualification> qualifications){
 		for(Qualification qualificationEntry :qualifications){
 			resumeService.saveQualificationEntry(qualificationEntry);
 		}
