@@ -21,7 +21,7 @@ import {
   animateChild
 } from '@angular/animations';
 
-
+import {ResumeService} from '../app/resume-service';
 
 
 @NgModule({
@@ -39,7 +39,7 @@ import {
     HttpClientModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ResumeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -9,20 +9,36 @@ import {About} from '../../../about'
 })
 export class AboutComponent implements OnInit {
   aboutContent : Array<About>;
-  data1:string;
+  private address: string;
+  // phoneNumber: string;
+  // descText: string;
+  // email: string;
 
   constructor(private resumeSer: ResumeService) {
     this.aboutContent=[];
+   this.address="";
    }
 
   ngOnInit() {
     this.resumeSer.getAboutPageContent().subscribe((aboutData)=>{
+      
     this.aboutContent.push(...aboutData);  
+     this.aboutContent.forEach(function (value) {
+          if(value.aboutKeyName === "ADDRESS"){
+    
+         // this.address=value.aboutValueText;
+        //  console.log( this.address);
+        
+          }
       });
+  
+    
 
+}); 
 
-      // console.log("about data-->",this.aboutContent);
 
   }
+
+  
 
 }
