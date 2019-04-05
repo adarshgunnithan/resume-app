@@ -10,6 +10,7 @@ import { AwardsComponent } from './app/components/awards/awards.component';
 import { RouterModule, Routes } from '@angular/router';
 import {AppRoutingModule} from './app-router.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 import {
   transition,
   trigger,
@@ -35,6 +36,7 @@ import {
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [],
