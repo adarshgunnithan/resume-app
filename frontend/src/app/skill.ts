@@ -1,4 +1,4 @@
-export interface skill {
+export interface Skill {
     skillID: number;
     skillIcon: string;
     skillName: string;

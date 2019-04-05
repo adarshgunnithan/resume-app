@@ -1,4 +1,4 @@
-export class qualification {
+export class Qualification {
     qualificationId: number;
     university: string;
     college: string;
