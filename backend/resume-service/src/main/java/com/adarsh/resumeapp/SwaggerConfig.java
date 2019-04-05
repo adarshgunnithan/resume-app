@@ -18,18 +18,27 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @Configuration
 @EnableSwagger2
 public class SwaggerConfig {
-//com.adarsh.resumeapp.controller
-	  @Bean
+	
+	 /**
+	  * Swagger configuration
+	 * @return
+	 */
+	@Bean
 	    public Docket api() {
 	        return new Docket(DocumentationType.SWAGGER_2).select()
 	            .apis(RequestHandlerSelectors
 	                .basePackage("com.adarsh.resumeapp.controller"))
 	            .build().apiInfo(apiEndPointsInfo());
 	    }
+	
+	    /**
+	     * Meta data for swagger ui
+	     * @return
+	     */
 	    private ApiInfo apiEndPointsInfo() {
 	        return new ApiInfoBuilder().title("Spring Boot REST API")
-	            .description("Employee Management REST API")
-	            .contact(new Contact("Ramesh Fadatare", "www.javaguides.net", "ramesh24fadatare@gmail.com"))
+	            .description("Resume app REST API")
+	            .contact(new Contact("Adarsh G Unnithan", "", "adarshgunnithan2017@gmail.com"))
 	            .license("Apache 2.0")
 	            .licenseUrl("http://www.apache.org/licenses/LICENSE-2.0.html")
 	            .version("1.0.0")

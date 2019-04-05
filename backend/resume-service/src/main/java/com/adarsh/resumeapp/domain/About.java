@@ -8,8 +8,9 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 /**
- * @author 660186
- *
+ * @author 660186- Adarsh G Unnithan
+ * Entity for about page
+ * About data is stored as key value pair
  */
 @Entity
 @Table(name = "about")

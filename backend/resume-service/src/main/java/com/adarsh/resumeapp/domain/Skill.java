@@ -6,6 +6,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+/**
+ * @author 660186- Adarsh G Unnithan
+ *Entity for skill entry
+ */
 @Entity
 @Table(name = "skills")
 public class Skill {

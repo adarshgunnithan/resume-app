@@ -5,6 +5,10 @@ import org.springframework.stereotype.Repository;
 
 import com.adarsh.resumeapp.domain.Skill;
 
+/**
+ * @author 660186- Adarsh G Unnithan
+ *
+ */
 @Repository
 public interface SkillRepo  extends JpaRepository<Skill, Integer>{
 

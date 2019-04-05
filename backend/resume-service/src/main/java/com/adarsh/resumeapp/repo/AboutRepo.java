@@ -5,6 +5,10 @@ import org.springframework.stereotype.Repository;
 
 import com.adarsh.resumeapp.domain.About;
 
+/**
+ * @author 660186- Adarsh G Unnithan
+ *About domain repo 
+ */
 @Repository
 public interface AboutRepo   extends JpaRepository<About, Integer>{
 

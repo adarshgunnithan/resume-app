@@ -7,6 +7,10 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+/**
+ * @author 660186- Adarsh G Unnithan
+ *Entity for qualification entity
+ */
 @Entity
 @Table(name = "qualifications")
 public class Qualification {
