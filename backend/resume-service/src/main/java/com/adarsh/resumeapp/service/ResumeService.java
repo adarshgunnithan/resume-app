@@ -8,12 +8,21 @@ import com.adarsh.resumeapp.domain.Qualification;
 import com.adarsh.resumeapp.domain.Skill;
 
 public interface ResumeService {
-	
-	public About getAboutData();
+	//
+	public List<About> getAboutData();
 	
 	public List<Experience>  getExperience();
 	
 	public List<Qualification> getQualifications();
 	
 	public List<Skill> getSkills();
+	
+	
+	public boolean saveAboutEntry(About aboutEntry);
+	
+	public boolean saveExperienceEntry(Experience experienceEntry);
+	
+	public boolean saveQualificationEntry(Qualification qualificationEntry);
+	
+	public boolean saveSkill(Skill skill);
 }
