@@ -22,7 +22,7 @@ import {
 } from '@angular/animations';
 
 import {ResumeService} from '../app/resume-service';
-
+import { ChartsModule } from 'ng2-charts'
 
 @NgModule({
   declarations: [
@@ -37,7 +37,8 @@ import {ResumeService} from '../app/resume-service';
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ChartsModule
   ],
   providers: [ResumeService],
   bootstrap: [AppComponent]
