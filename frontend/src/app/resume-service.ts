@@ -37,7 +37,7 @@ export class ResumeService {
     return this.httpClient.get<Array<Skill>>(this.skillApiUrl);
    }
 
-   getQualificatione():Observable<Array<Qualification>>{
+   getQualifications():Observable<Array<Qualification>>{
     return this.httpClient.get<Array<Qualification>>(this.educationApiUrl);
    }
 }

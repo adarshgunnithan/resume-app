@@ -1,0 +1,41 @@
+<!--about page-->
+
+[
+  {
+    "aboutKeyName": "ADDRESS",
+    "aboutValueText": ": Arathy, Puthupally PO, Kayamkulam, Alappuzha, Kerala, India"
+  },{
+    "aboutKeyName": "PHONE_NUMBER",
+    "aboutValueText": "+91 9744835312 "
+  },{
+    "aboutKeyName": "EMAIL",
+    "aboutValueText": "adarshgunnithan2017@gmail.com"
+  },{
+
+    "aboutKeyName": "ABOUT_TXT",
+    "aboutValueText": "As a Full Stack engineer, I have Over 6+ years of experience in application design, development, testing and deployment of highly scalable and distributed web applications."
+  }
+]
+
+<!--education-->
+[
+  {
+    "college": "Kristu Jyothi College of Management and technology",
+    "course": "Master of Computer Applications",
+    "fromDate": "2009",
+    "percentage": "70%",
+    "qualificationId": 0,
+    "specialization": "string",
+    "toDate": "2012",
+    "university": "Mahatma Gandhi University, Kerala"
+  },  {
+    "college": "Bishop Moore College",
+    "course": "B.Sc Physics",
+    "fromDate": "2006",
+    "percentage": "62%",
+    "qualificationId": 0,
+    "specialization": "Physics",
+    "toDate": "2009",
+    "university": "University of Kerala"
+  }
+]

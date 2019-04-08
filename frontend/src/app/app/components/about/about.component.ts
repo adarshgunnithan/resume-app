@@ -34,7 +34,8 @@ export class AboutComponent implements OnInit {
           }else if(value.aboutKeyName === "EMAIL"){
             this.email=value.aboutValueText;
           }else if(value.aboutKeyName === "ABOUT_TXT"){
-            this.descText===value.aboutValueText;
+           
+            this.descText=value.aboutValueText;
           }else{
 
           }
