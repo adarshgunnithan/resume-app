@@ -9,10 +9,10 @@ import {About} from '../../../about'
 })
 export class AboutComponent implements OnInit {
   aboutContent : Array<About>;
-  private address: string;
-  private phoneNumber: string;
-  private descText: string;
-  private email: string;
+   address: string;
+   phoneNumber: string;
+   descText: string;
+   email: string;
 
   constructor(private resumeSer: ResumeService) {
     this.aboutContent=[];
