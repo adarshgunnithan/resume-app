@@ -17,10 +17,14 @@ export class ResumeService {
   private educationApiUrl : string;
   private skillApiUrl : string;
   constructor(private httpClient: HttpClient) {
-    this.aboutUrl ="http://localhost:8080/api/v1/resume-service/about";
-    this.experienceApiUrl="http://localhost:8080/api/v1/resume-service/experience";
-    this.educationApiUrl="http://localhost:8080/api/v1/resume-service/qualifications";
-    this.skillApiUrl="http://localhost:8080/api/v1/resume-service/skills";
+    // this.aboutUrl ="http://localhost:8080/api/v1/resume-service/about";
+    // this.experienceApiUrl="http://localhost:8080/api/v1/resume-service/experience";
+    // this.educationApiUrl="http://localhost:8080/api/v1/resume-service/qualifications";
+    // this.skillApiUrl="http://localhost:8080/api/v1/resume-service/skills";
+this.aboutUrl ="./assets/data/about.json";
+this.experienceApiUrl="./assets/data/experience.json";
+this.educationApiUrl="./assets/data/qualifications.json";
+this.skillApiUrl="./assets/data/skills.json";
 
    }
 
