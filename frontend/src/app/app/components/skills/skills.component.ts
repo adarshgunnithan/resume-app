@@ -12,13 +12,13 @@ export class SkillsComponent implements OnInit {
     responsive: true    // THIS WILL MAKE THE CHART RESPONSIVE (VISIBLE IN ANY DEVICE).
   }
 
-  labels =  ['Java', 'Angular', 'SQL','Java', 'Angular', 'SQL'];
+  labels = ['Java', 'Angular', 'Web services', 'J2EE Frameworks', 'ORM Framework','Web Development','Testing Tools/Frameworks','ESBs','Reporting','RDBMS','No SQL','Case Tools & OOAD','Dev Ops','Message brokers','Agile',''];
 
   // STATIC DATA FOR THE CHART IN JSON FORMAT.
   chartData = [
     {
       label: 'Skills',
-      data: [80, 40, 80,21, 56, 80] 
+      data: [90, 50, 80, 80, 60,70,50,70,30,70,75,80,65,60,80,0]
     }
   ];
 
