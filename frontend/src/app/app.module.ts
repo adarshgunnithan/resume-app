@@ -34,8 +34,8 @@ import { ChartsModule } from 'ng2-charts'
     AwardsComponent
   ],
   imports: [
-    BrowserModule,
     BrowserAnimationsModule,
+    BrowserModule,
     HttpClientModule,
     AppRoutingModule,
     ChartsModule
