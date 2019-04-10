@@ -1,0 +1,40 @@
+[ {
+    "companyName": "Cognizant",
+    "companyWebSiteUrl": "",
+    "descriptionText": "",
+    "designation": "Product Specialist -Technical",
+    "fromDate": "October ‘17",
+    "logoUrl": "",
+    "presentCompany": true,
+    "toDate": "Till Now"
+  }, {
+    "companyName": "IBS Software Services",
+    "companyWebSiteUrl": "",
+    "descriptionText": "",
+    "designation": "Senior Software Engineer",
+    "fromDate": "May ‘15",
+    "logoUrl": "",
+    "presentCompany": false,
+    "toDate": " October ‘5"
+  },{
+    "companyName": "E-Team Informatica India (P) Ltd",
+    "companyWebSiteUrl": "",
+    "descriptionText": "",
+    "designation": "Associative Software Engineer",
+    "fromDate": "Feb ‘14",
+    "logoUrl": "",
+    "presentCompany": false,
+    "toDate": "May ‘15"
+  },
+  {
+    "companyName": "Miraglo Software Solutions(P)Ltd",
+    "companyWebSiteUrl": "",
+    "descriptionText": "",
+    "designation": "Java Programmer",
+    "fromDate": "Apr ‘13",
+    "logoUrl": "",
+    "presentCompany": false,
+    "toDate": "Jan ‘14"
+  }
+ 
+]

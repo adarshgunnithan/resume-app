@@ -1,0 +1,15 @@
+[
+  {
+    "aboutKeyName": "ADDRESS",
+    "aboutValueText": "Arathy, Puthupally PO, Kayamkulam, Alappuzha, Kerala, India"
+  },{
+    "aboutKeyName": "PHONE_NUMBER",
+    "aboutValueText": "+91 9744835312 "
+  },{
+    "aboutKeyName": "EMAIL",
+    "aboutValueText": "adarshgunnithan2017@gmail.com"
+  },{
+	"aboutKeyName": "ABOUT_TXT",
+	"aboutValueText": "As a Full Stack Engineer,I have involved from the earliest stage to scope ideas and propose tech solutions.I have worked in a number of mission critical cross platform systems and involved different phases of software development life cycle ensuring requirement specifications provided by project owners are met with out compromising non functional requirements.I have over 6+ years of experience in application design, development, testing and deployment of highly scalable and distributed web applications using Java/J2EE technologies."
+}
+]

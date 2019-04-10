@@ -1,0 +1,21 @@
+[
+  {
+    "college": "Kristu Jyothi College of Management and technology",
+    "course": "Master of Computer Applications",
+    "fromDate": "2009",
+    "percentage": "70%",
+    "qualificationId": 0,
+    "specialization": "string",
+    "toDate": "2012",
+    "university": "Mahatma Gandhi University, Kerala"
+  },  {
+    "college": "Bishop Moore College",
+    "course": "B.Sc Physics",
+    "fromDate": "2006",
+    "percentage": "62%",
+    "qualificationId": 0,
+    "specialization": "Physics",
+    "toDate": "2009",
+    "university": "University of Kerala"
+  }
+]
